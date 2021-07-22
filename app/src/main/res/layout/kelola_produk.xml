@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ad1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="16dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_icon"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20.5dp"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Kelola Produk"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_logo"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20.5dp"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@id/garis_pemisah1"
+        android:layout_below="@+id/ad1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_height="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp"
+        android:background="@color/grey"/>
+    <LinearLayout
+        android:id="@+id/ad2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/garis_pemisah1"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Produk"
+            android:layout_marginRight="128dp"
+
+            android:fontFamily="@font/poppins"
+            android:textSize="12sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kategori"
+            android:fontFamily="@font/poppins"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/ad2"
+        android:id="@+id/rvproduk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_marginBottom="61dp"
+        android:layout_alignParentBottom="true"
+        android:hint="Tambah Produk"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/btn_style"/>
+</RelativeLayout>

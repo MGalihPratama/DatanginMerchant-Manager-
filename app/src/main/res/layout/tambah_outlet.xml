@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="16dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_icon"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20.5dp"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Tambah Outlet"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_height="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp"
+        android:background="@color/grey"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/ad1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+                <ImageButton
+                    android:layout_marginTop="20dp"
+                    android:layout_width="80dp"
+                    android:layout_height="78dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/icon_input_outlet"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Informasi Outlet"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/form_style"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Nama Outlet"
+                    android:inputType="textEmailAddress" />
+                <EditText
+                    android:hint="No. HandPhone "
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/poppins"
+                    android:background="@drawable/form_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/form_style"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Alamat Lengkap"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:hint="Provisi"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/poppins"
+                    android:background="@drawable/form_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:hint="Kabupaten/Kota"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/poppins"
+                    android:background="@drawable/form_style"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:hint="Kecamatan"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/poppins"
+                    android:background="@drawable/form_style"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:hint="Kelurahan"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/poppins"
+                    android:background="@drawable/form_style"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:hint="Kode Pos"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/poppins"
+                    android:background="@drawable/form_style"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_below="@id/ad1"
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_height="8dp"
+                android:id="@+id/gp1"
+
+                android:background="@color/grey"/>
+            <LinearLayout
+                android:id="@+id/ad2"
+                android:layout_below="@id/gp1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="18dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lokasi Outlet"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/lokasi"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pilih Lokasi Di Peta"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <ImageButton
+                        android:layout_width="6dp"
+                        android:layout_height="10dp"
+                        android:background="@drawable/right_arrow"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="16dp"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pastikan lokasi yang kamu tandai di peta sesuai dengan alamat yang kamu isi pada kolom diatas"
+                    android:fontFamily="@font/poppins"/>
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pegawai"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+                <Button
+                    android:layout_below="@id/ad2"
+                    android:hint="Pilih Pegawai"
+                    android:textColorHint="@color/color_datangin"
+                    android:fontFamily="@font/poppins"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_style2"/>
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Seseorang"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status/jabatan"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="#10A83A"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_below="@id/ad2"
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_height="8dp"
+                android:id="@+id/gp2"/>
+            <Button
+                android:layout_below="@id/gp2"
+                android:hint="Simpan"
+                android:textColorHint="@color/white"
+                android:fontFamily="@font/poppins"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_marginTop="80dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_style"/>
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>
